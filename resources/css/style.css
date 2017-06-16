@@ -1,0 +1,81 @@
+/*** high level styles ***/
+.full-width {
+  width: 100%;
+  justify-content: center;
+}
+.container {
+  width: 960px;
+}
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+.full-width,
+.container
+.header
+.headline,
+.background-image,
+.navigation,
+.main-content,
+.products,
+.image-text,
+.info,
+.location,
+.hours {
+  display: flex;
+}
+span,
+p {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2rem;
+}
+
+/*** background images/color & text color ***/
+.navigation {
+  background-color: firebrick;
+  color: white;
+}
+.header,
+.headline,
+.footer,
+.image-text p,
+.has-background {
+  background-color: black;
+  color: white;
+}
+.background-image {
+  background-image: url("../images/moto-background.jpeg");
+}
+
+/*** header properties ***/
+#logo {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+span {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+.header {
+  align-items: center;
+}
+/*** background image & headline section ***/
+.headline {
+  z-index: 5;
+  flex-direction: column;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 20rem;
+}
+h1 {
+  margin-top: .25rem;
+}
+.background-image {
+  height: 25rem;
+  width: 100%;
+}
