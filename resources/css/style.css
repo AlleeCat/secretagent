@@ -1,14 +1,16 @@
 /*** high level styles ***/
 .full-width {
   width: 100%;
-  justify-content: center;
 }
-.container {
+.content-width {
   width: 960px;
+  margin: 0 auto;
 }
 html {
-  font-family: Helvetica;
   font-size: 18px;
+}
+body {
+  font-family: Helvetica;
 }
 .full-width,
 .container
@@ -16,6 +18,7 @@ html {
 .headline,
 .background-image,
 .navigation,
+nav
 .main-content,
 .products,
 .image-text,
@@ -27,9 +30,6 @@ html {
 span,
 p {
   font-size: 1rem;
-}
-h1 {
-  font-size: 2rem;
 }
 
 /*** background images/color & text color ***/
@@ -47,6 +47,9 @@ h1 {
 }
 .background-image {
   background-image: url("../images/moto-background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*** header properties ***/
@@ -55,27 +58,89 @@ h1 {
   margin-left: 0.5rem;
   margin-right: 1rem;
 }
-span {
+#headline {
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
 }
-.header {
+.header-content {
   align-items: center;
+  height: 2.32rem;
 }
 /*** background image & headline section ***/
 .headline {
   z-index: 5;
   flex-direction: column;
-  padding-left: 3rem;
-  padding-top: 2rem;
-  align-items: flex-start;
-  justify-content: center;
+  margin-top: 9rem;
+  margin-bottom: 5rem;
   width: 20rem;
 }
 h1 {
   margin-top: .25rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#new-arrival {
+  padding-left: 3rem;
+  padding-top: 2rem;
 }
 .background-image {
   height: 25rem;
   width: 100%;
+}
+
+/*** navigation bar ***/
+nav {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/*** main content & images ***/
+.products {
+  justify-content: space-between;
+}
+.image-text {
+  display: block;
+  width: 30%;border: 4px solid black;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.image {
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 9rem;
+}
+.below-image {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.location,
+.hours {
+  flex-direction: column;
+  width: 35%;
+}
+.has-background {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.hours {
+  margin-left: auto;
+}
+.info {
+  margin-bottom: 4rem;
+}
+
+/*** Footer section ***/
+.footer {
+  height: 5rem;
+}
+footer {
+  align-items: center;
 }
